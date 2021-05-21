@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ctgu.ja.dao.ManagerDao">
+    <select id="selectManager" parameterType="String" resultType="com.ctgu.ja.vo.Manager">
+        select * from manager where managerId = #{managerId}
+    </select>
+</mapper>
